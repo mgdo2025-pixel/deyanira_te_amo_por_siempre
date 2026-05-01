@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi vida, mi niña - Letra Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-blue: #00e5ff;
+            --neon-purple: #ab47bc;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            background: #050510;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .bg-fixed {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at center, #111e3c 0%, #050510 100%);
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%;
+            opacity: 0.5; animation: twinkle var(--d) infinite;
+        }
+
+        @keyframes twinkle { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+
+        .container {
+            max-width: 850px; margin: 0 auto; padding: 80px 20px; text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif; font-size: 4rem;
+            color: var(--neon-blue); text-shadow: 0 0 25px var(--neon-blue);
+            margin-bottom: 5px;
+        }
+
+        .dedicatoria-top {
+            font-style: italic; font-size: 1.6rem; margin-bottom: 60px;
+            color: var(--neon-purple); text-shadow: 0 0 10px var(--neon-purple);
+        }
+
+        .lyrics-section {
+            background: var(--glass); backdrop-filter: blur(15px);
+            padding: 50px 30px; border-radius: 40px; 
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+        }
+
+        .verse { margin-bottom: 50px; }
+        .eng { font-family: 'Playfair Display', serif; font-size: 1.9rem; color: var(--neon-blue); margin: 0; line-height: 1.3; }
+        .esp { font-size: 0.95rem; color: #bbb; margin: 12px 0; font-weight: 200; text-transform: uppercase; letter-spacing: 2px; }
+        .emoji { font-size: 1.8rem; margin-top: 10px; display: block; opacity: 0.8; }
+
+        .chorus {
+            padding: 30px; border-radius: 20px;
+            background: rgba(171, 71, 188, 0.1);
+            border-left: 4px solid var(--neon-purple);
+            margin: 40px 0;
+        }
+
+        .chorus .eng { color: #fff; text-shadow: 0 0 15px var(--neon-purple); }
+
+        .player-bar {
+            position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+            background: rgba(0,0,0,0.9); padding: 12px 25px; border-radius: 50px;
+            border: 2px solid var(--neon-purple); z-index: 100;
+            display: flex; align-items: center; gap: 15px;
+        }
+
+        audio { filter: invert(1) hue-rotate(240deg); width: 260px; }
+
+        footer { margin-top: 60px; padding-bottom: 120px; font-weight: 200; letter-spacing: 3px; color: var(--neon-blue); }
+    </style>
+</head>
+<body>
+
+    <div class="bg-fixed" id="starfield"></div>
+
+    <div class="container">
+        <header>
+            <h1>Iris</h1>
+            <p class="dedicatoria-top">Para mi amor, mi vida, mi niña... ❤️✨</p>
+        </header>
+
+        <div class="lyrics-section">
+            
+            <!-- VERSE 1 -->
+            <div class="verse">
+                <p class="eng">"And I'd give up forever to touch you<br>'Cause I know that you feel me somehow"</p>
+                <p class="esp">Y daría mi eternidad por tocarte<br>Porque sé que me sientes de alguna manera</p>
+                <span class="emoji">✨🌌</span>
+            </div>
+
+            <div class="verse">
+                <p class="eng">"You're the closest to heaven that I'll ever be<br>And I don't wanna go home right now"</p>
+                <p class="esp">Eres lo más cercano al cielo que estaré jamás<br>Y no quiero irme a casa ahora mismo</p>
+                <span class="emoji">👼☁️</span>
+            </div>
+
+            <!-- VERSE 2 -->
+            <div class="verse">
+                <p class="eng">"And all I can taste is this moment<br>And all I can breathe is your life"</p>
+                <p class="esp">Y todo lo que puedo saborear es este momento<br>Y todo lo que puedo respirar es tu vida</p>
+                <span class="emoji">🍷🌬️</span>
+            </div>
+
+            <div class="verse">
+                <p class="eng">"And sooner or later, it's over<br>I just don't wanna miss you tonight"</p>
+                <p class="esp">Y tarde o temprano, esto se acaba<br>Simplemente no quiero extrañarte esta noche</p>
+                <span class="emoji">⌛🌙</span>
+            </div>
+
+            <!-- CHORUS -->
+            <div class="chorus">
+                <div class="verse">
+                    <p class="eng">"And I don't want the world to see me<br>'Cause I don't think that they'd understand"</p>
+                    <p class="esp">Y no quiero que el mundo me vea<br>Porque no creo que entiendan</p>
+                </div>
+                <div class="verse">
+                    <p class="eng">"When everything's made to be broken<br>I just want you to know who I am"</p>
+                    <p class="esp">Cuando todo está hecho para romperse<br>Solo quiero que sepas quién soy</p>
+                    <span class="emoji">💔🫂</span>
+                </div>
+            </div>
+
+            <!-- VERSE 3 -->
+            <div class="verse">
+                <p class="eng">"And you can't fight the tears that ain't coming<br>Or the moment of truth in your lies"</p>
+                <p class="esp">Y no puedes luchar contra las lágrimas que no vienen<br>O el momento de la verdad en tus mentiras</p>
+                <span class="emoji">💧🕯️</span>
+            </div>
+
+            <div class="verse">
+                <p class="eng">"When everything feels like the movies<br>Yeah, you bleed just to know you're alive"</p>
+                <p class="esp">Cuando todo parece una película<br>Sí, sangras solo para saber que estás vivo</p>
+                <span class="emoji">🎬🩸</span>
+            </div>
+
+            <!-- FINAL CHORUS REPEATS -->
+            <div class="chorus">
+                <p class="eng">"I just want you to know who I am"</p>
+                <p class="esp">Solo quiero que sepas quién soy</p>
+                <span class="emoji">💎</span>
+            </div>
+
+            <div class="verse">
+                <p class="eng">"I just want you to know who I am...<br>I just want you to know who I am..."</p>
+                <p class="esp">Solo quiero que sepas quién soy...<br>Solo quiero que sepas quién soy...</p>
+                <span class="emoji">❤️‍🔥</span>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>ERES MI TODO</p>
+        </footer>
+    </div>
+
+    <div class="player-bar">
+        <audio src="musica.mp3" controls></audio>
+    </div>
+
+    <script>
+        const field = document.getElementById('starfield');
+        for (let i = 0; i < 120; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 3 + 'px';
+            star.style.width = size;
+            star.style.height = size;
+            star.style.top = Math.random() * 100 + '%';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.setProperty('--d', Math.random() * 3 + 2 + 's');
+            field.appendChild(star);
+        }
+    </script>
+</body>
+</html>
